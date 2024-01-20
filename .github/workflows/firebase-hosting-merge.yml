@@ -12,9 +12,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: NPM install
-        run: npm install
-
       - name: Cache node modules
         id: cache-npm
         uses: actions/cache@v3
@@ -33,6 +30,9 @@ jobs:
         name: List the state of node modules
         continue-on-error: true
         run: npm list
+
+      - name: NPM install
+        run: npm install
 
       - name: Build client application
         run: nx build client
