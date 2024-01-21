@@ -24,6 +24,8 @@ jobs:
 
       - uses: nrwl/nx-set-shas@v3
 
+      - run: git branch --track main origin/main
+
       - run: npx nx affected -t lint,test --parallel=3
 
   build_and_deploy:
