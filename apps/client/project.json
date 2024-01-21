@@ -4,7 +4,7 @@
   "projectType": "application",
   "prefix": "two-way",
   "sourceRoot": "apps/client/src",
-  "tags": [],
+  "tags": ["frontend"],
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:browser",
